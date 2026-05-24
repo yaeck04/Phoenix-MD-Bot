@@ -1,0 +1,100 @@
+services:
+  - type: web
+    name: phoenix-md
+    repo: https://github.com/AbhishekSuresh2/Phoenix-MD-Bot.git
+    branch: main
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    autoDeploy: true
+
+    envVars:
+      - key: RENDER_APP_NAME
+        sync: false
+        required: true
+
+      - key: RENDER_API
+        sync: false
+        required: true
+
+      - key: SESSION_ID
+        sync: false
+        required: true
+
+      - key: PREFIX
+        value: .
+        required: false
+
+      - key: MODE
+        value: private
+        required: false
+
+      - key: SUDO
+        value: 919074692450,918157993101
+        required: false
+
+      - key: BOT_LANG
+        value: EN
+        required: false
+
+      - key: TIMEZONE
+        value: Asia/Kolkata
+        required: false
+
+      - key: START_MSG
+        value: true
+        required: false
+
+      - key: ERROR_MSG
+        value: true
+        required: false
+
+      - key: WELCOME_MSG
+        value: 👋 Hello *@user* Welcome To Our Group *@gname*\n*Total Members:* @count\n*Total Admins:* @admin\n*Group Description:*\n@gdesc @pp
+        required: false
+
+      - key: GOODBYE_MSG
+        value: 👋 GoodBye *@user* From *@gname*\n*Total Members:* @count @pp
+        required: false
+
+      - key: STICKER_DATA
+        value: 🎯ᴘʜᴏᴇɴɪx-ᴍᴅ;ᴀʙʜɪꜱʜᴇᴋ ꜱᴜʀᴇꜱʜ🍀
+        required: false
+
+      - key: AUDIO_DATA
+        value: Phoenix-MD;Abhishek Suresh;https://i.ibb.co/tHWJrz3/IMG-20231128-WA0005.jpg
+        required: false
+
+      - key: BOT_INFO
+        value: ᴘʜᴏᴇɴɪx-ᴍᴅ;ᴀʙʜɪꜱʜᴇᴋ ꜱᴜʀᴇꜱʜ;919074692450;https://i.ibb.co/tHWJrz3/IMG-20231128-WA0005.jpg
+        required: false
+
+      - key: ALIVE_DATA
+        value: 👋 ʜᴇʏ &sender, ɪ ᴍ *ᴘʜᴏᴇɴɪx-ᴍᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ* ᴀʟɪᴠᴇ ɴᴏᴡ!\n\n📌 ᴛʏᴘᴇ *menu* ᴛᴏ ɢᴇᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ.\n\n*ᴘʟᴀᴛꜰᴏʀᴍ:* &platform\n*ʀᴜɴᴛɪᴍᴇ:* &runtime;https://i.ibb.co/tHWJrz3/IMG-20231128-WA0005.jpg
+        required: false
+
+      - key: AUTO_ALWAYS_ONLINE
+        value: false
+        required: false
+
+      - key: AUTO_CALL_REJECT
+        value: false
+        required: false
+
+      - key: AUTO_CALL_REJECT_MSG
+        value: "*ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ᴄᴀʟʟ ʙʟᴏᴄᴋɪɴɢ*\n\nꜱᴏʀʀʏ ᴄᴀʟʟꜱ ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ\n\nᴘʟᴇᴀꜱᴇ ꜱᴇɴᴅ ᴀ ᴛᴇxᴛ ᴍᴇꜱꜱᴀɢᴇ/ᴠᴏɪᴄᴇ ᴍᴇꜱꜱᴀɢᴇ\n\n> ᴘʜᴏᴇɴɪx-ᴍᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ"
+        required: false
+
+      - key: AUTO_MSG_READ
+        value: false
+        required: false
+
+      - key: AUTO_MSG_REACT
+        value: false
+        required: false
+
+      - key: AUTO_STATUS_VIEW
+        value: false
+        required: false
+
+
